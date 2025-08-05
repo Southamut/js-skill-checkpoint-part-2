@@ -7,3 +7,9 @@ const students = [
 ];
 
 // เริ่มเขียนโค้ดตรงนี้
+result = students
+  .filter((personData) => personData.score > 50) 
+  .map((personData) => personData.score *= 1.1) 
+  .reduce((acc, curr) => acc + curr, 0)
+  .toFixed(1)
+console.log(result)
