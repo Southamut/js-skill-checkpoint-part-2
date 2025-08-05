@@ -12,4 +12,4 @@ result = students
   .map((personData) => personData.score *= 1.1) 
   .reduce((acc, curr) => acc + curr, 0)
   .toFixed(1)
-console.log(result)
+console.log(`Total score is ${result}`)
